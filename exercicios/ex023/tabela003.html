@@ -12,6 +12,7 @@
         table {
             width: 450px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th {
@@ -30,6 +31,12 @@
         thead, tfoot {
             background-color: gray;
             color: white;
+        }
+
+        thead > tr > th { 
+            position: sticky; /* Cabeçalho Fixo */
+            top: -1px;
+            background-color: gray;
         }
 
         td.num {
@@ -53,6 +60,7 @@
         
         Table <table>
             Caption <caption>
+
             THEAD <thead>
                 <tr>, <td>, <th>
              
