@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }  
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    
+    <form action="cadastro.php" method="post" enctype="multipart/form-data">
+
+        <p>
+            <label for="icor">Cor</label>
+            <input type="color" name="cor" id="icor" value="#164f85">
+        </p>
+
+        <p>
+            <label for="inivel">Nível de Satisfação</label>
+            <input type="range" name="nivel" id="inivel"min="0" max="10" value="0">
+        </p>
+
+        <p>
+            <label for="iquivos">Arquivo</label>
+            <input type="file" name="arqui" id="iquivos">
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
