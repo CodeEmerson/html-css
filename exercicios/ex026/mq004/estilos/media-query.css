@@ -22,9 +22,9 @@ Telas Grandes: acima de 1201px
     }
 
   
-    footer::after {
+    main::after {
         content: 'Essa impressão foi feita através do site www.cursoemvideo.com' ; 
-               
+          
     }
 
     img#phone { display: none; }
