@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 { text-align: center;}
+
+h2 {
+    margin-top: 50px;
+}
+
+p { text-align: center;}
+
+div.conteiner, div.conteiner1, div.conteiner2, div.conteiner3 {
+    background-color: #92BFB1;
+
+    display: flex;
+    flex-flow: row wrap;
+    height: 300px;
+}
+
+div.conteiner {
+    align-content: stretch;
+}
+
+div.conteiner1 {
+    align-content: flex-start;
+}
+
+div.conteiner2 {
+    align-content: flex-end;
+}
+
+div.conteiner3 {
+    align-content: center;
+}
+
+div.item {
+    background-color: #036c8b;
+    border: 1px solid black;
+    text-align: center;
+    padding: 35px;
+}

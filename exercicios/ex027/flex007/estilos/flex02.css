@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+* { 
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    margin-top: 40px;
+}
+
+div.conteiner, div.conteiner2, div.conteiner3 {
+    background-color: #634e44;
+    display: flex;
+    flex-flow: row wrap;
+    height: 400px;
+    width: 65vw;
+}
+
+div.item {
+    background-color: #006de2;
+    border: 1px solid black;
+    text-align: center;
+    padding: 35px;
+}
+
+div.conteiner {
+    align-content: space-between;
+}
+
+div.conteiner2 {
+    align-content: space-evenly;
+}
+
+div.conteiner3 {
+    align-content: space-around;
+}
