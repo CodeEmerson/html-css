@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+
+
+div.conteiner2 {
+    background-color: #435058;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 300px;
+    
+} 
+
+div.item2 {
+    background-color: #DCF763;
+    border: 1px solid black;
+    text-align: center;
+    padding: 20px;
+}
+
+
+div#id1 {
+    align-self: flex-start;
+}
+
+div#id2 {
+    align-self: center;
+}
+
+div#id3 {
+  align-self: flex-end;  
+}
+
+div#id4 {
+   align-self: auto;
+}
+
+div#id5 {
+    align-self: flex-start;    
+}
+
+div#id6 {
+    align-self: stretch;
+}
+
+div#id7 {
+    align-self: flex-end;
+}
