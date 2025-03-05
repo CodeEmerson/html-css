@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1 {
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        h2 {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-top: 50px;
+        }
+
+        div.conteiner {
+            background-color: #81c3d7;
+            display: flex;
+            flex-flow: row nowrap;
+            width: 90vw;            
+        }
+
+        div.conteiner2 {
+            background-color: #463f3a;
+            display: flex;
+            flex-flow: row nowrap;
+            width: 90vw;            
+        }
+
+        div.conteiner3 {
+            background-color: #104911;
+            display: flex;
+            flex-flow: row nowrap;
+            width: 90vw;
+        }
+
+        div.item {
+            background-color: #3a7ca5;
+            border: 1px solid black;
+            text-align: center;
+            padding: 30px;
+        }
+
+        div.item2 {
+            background-color: #8a817c;
+            border: 1px solid black;
+            text-align: center;
+            padding: 30px;
+        }
+
+        div.item3 {
+            background-color: #6a994e;
+            border: 1px solid black;
+            text-align: center;
+            padding: 30px;
+        }
+
+        div#cxA {
+            flex: 3 4 200px;
+        }
+
+        div#cxB {
+            flex: 0 1 200px;
+        }
+
+        div#cxC {
+            flex: 1 2 200px;
+        }
+
+        div#cx2A {
+            flex: 0 0 150px;
+        }
+
+        div#cx2B {
+            flex: 1 1 150px;
+        }
+
+        div#cx2C {
+            flex: 6 6 150px;
+        }
+
+        div#cx3A {
+            flex: 2 1 100px;
+        }
+
+        div#cx3B {
+            flex: 3 5 100px;
+        }
+
+        div#cx3C {
+            flex: 0 0 100px;
+        }
+
+        p {
+            text-align: center;
+            font-size: 17px;
+        }
+
+        p.obs{ 
+            text-align: left;
+            font-size: 19px;
+        }
+    </style>
+</head>
+<body>
+    <h1>flex-grow, flex-shrink, flex-basis</h1>
+    <h2>Exemplo - 1</h2>
+    <div class="conteiner">
+        <div class="item" id="cxA">A</div>
+        <div class="item" id="cxB">B</div>
+        <div class="item" id="cxC">C</div>
+    </div>
+    <p><code><strong> A = flex:</strong> 3 4 200px; <strong>B = flex:</strong> 0 1 200px; <strong>C = flex:</strong> 1 2 200px;</code></p>
+    <h2>Exemplo - 2</h2>
+    <div class="conteiner2">
+        <div class="item2" id="cx2A">A</div>
+        <div class="item2" id="cx2B">B</div>
+        <div class="item2" id="cx2C">C</div>
+    </div>
+    <p><code><strong> A = flex:</strong> 0 0 150px; <strong>B = flex:</strong> 1 1 150px; <strong>C = flex:</strong> 6 6 150px;</code></p>
+    <h2>Exemplo - 3</h2>
+    <div class="conteiner3">
+        <div class="item3" id="cx3A">A</div>
+        <div class="item3" id="cx3B">B</div>
+        <div class="item3" id="cx3C">C</div>
+    </div>
+    <p><code><strong> A = flex:</strong> 2 1 100px; <strong>B = flex:</strong> 3 5 100px; <strong>C = flex:</strong> 0 0 100px;</code></p><br>
+
+    <p class="obs">*Todos os exemplos estão usando  <code><strong>display: flex; flex-flow: row nowrap;</strong>
+    </code></p><br>
+    
+    <p class="obs">A propriedade <strong>flex</strong> é o <strong>shorthand</strong> para <strong><code> (flex-grow, flex-shrink e flex-basis)</code></strong>.</p>
+</body>
+</html>
