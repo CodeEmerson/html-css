@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/style.css">
+    <title>Flexbox</title>
+</head>
+<body>
+    <h1>Flex-basis, Flex-shrink e Flex-grow</h1>
+    <h2>Exemplo - 1</h2>
+    <div class="conteiner"> 
+        <div class="item" id="cxA">A</div>
+        <div class="item" id="cxB">B</div>
+        <div class="item" id="cxC">C</div>
+    </div>
+    <p><strong>flex-basis:</strong> 200px <br> (A) <strong> flex-shrink:</strong> 0;
+        <strong>flex-grow:</strong> 1; (B)<strong> flex-shrink:</strong> 1;
+        <strong>flex-grow:</strong> 0; (C)<strong> flex-shrink:</strong> 2;
+        <strong>flex-grow:</strong> 2;</p>
+    <h2>Exemplo - 2</h2>
+    <div class="conteiner2"> 
+            <div class="item2" id="cx2A">A</div>
+            <div class="item2" id="cx2B">B</div>
+            <div class="item2" id="cx2C">C</div>
+    </div>
+    <p><strong>flex-basis:</strong> 200px <br> (A) <strong> flex-shrink:</strong> 1;
+        <strong>flex-grow:</strong> 1; (B)<strong> flex-shrink:</strong> 5;
+        <strong>flex-grow:</strong> 4; (C)<strong> flex-shrink:</strong> 0;
+        <strong>flex-grow:</strong> 0;</p>
+    <h2>Exemplo - 3</h2>
+    <div class="conteiner3"> 
+            <div class="item3" id="cx3A">A</div>
+            <div class="item3" id="cx3B">B</div>
+            <div class="item3" id="cx3C">C</div>
+    </div>
+    <p><strong>flex-basis:</strong> 200px <br> (A) <strong> flex-shrink:</strong> 8;
+        <strong>flex-grow:</strong> 6; (B)<strong> flex-shrink:</strong> 0;
+        <strong>flex-grow:</strong> 1; (C)<strong> flex-shrink:</strong> 1;
+        <strong>flex-grow:</strong> 2;</p><br>
+    <p id="ep"><strong>Exemplo</strong> - <strong>*</strong>1,2,3 = <code>
+        <strong>display:</strong> flex;
+        <strong>flex-flow:</strong> row wrap;
+    </code></p> 
+</body>
+</html>
